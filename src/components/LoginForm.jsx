@@ -24,6 +24,8 @@ const LoginForm = ({setLoggedIn}) => {
       e.preventDefault();
       setLoggedIn(true);
       toast.success("Signin success");
+      console.log("Logged In success. Here are the details entered!")
+      console.log(details);
       navigate("/dashboard");
     }
   

@@ -32,6 +32,8 @@ const SignupForm = ({ setLoggedIn }) => {
         }
         setLoggedIn(true);
         toast.success("Signup success");
+        console.log("Signup success. Here are the details entered!")
+        console.log({...details, userType});
         navigate("/dashboard");
     }
 
